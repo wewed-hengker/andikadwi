@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en " class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>andikacv</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          animation: {
+            'spin-slow': 'spin 3s linear infinite',
+            'wiggle': 'wiggle .6s ease-in-out infinite'
+          },
+          keyframes: {
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-3deg)' }, '50%': { transform: 'rotate(3deg)' }
+
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    #toggle:checked ~ label div.toggle-circle {
+      @apply translate-x-5
+    } 
+    #bg {
+      background-image: url(bg.png);
+      display: flex;
+      justify-content: start;
+      
+    }
+  </style>
+</head>
+
+<body class="bg-[#0e164e] font-serif">
+  <div class="">
+    <div class="container mx-auto relative z-10">
+      <nav
+        class="fixed top-0 left-0 right-0 bg-[#1111114f] flex justify-between items-center h-10 lg:h-20 px-5 text-white text-[14px]">
+        <div class="font-bold text-lg text-sky-400 lg:text-2xl">andika</div>
+        <ul class="sm:flex gap-6 hidden lg:text-lg">
+          <a href="#home" class="hover:text-sky-400 hover:scale-110 duration-300">home</li>
+            <a href="#a" class="hover:text-sky-400 hover:scale-110 duration-300">about</a>
+            <a href="#ed" class="hover:text-sky-400 hover:scale-110 duration-300">education</a>
+            <a href="#org" class="hover:text-sky-400 hover:scale-110 duration-300">organitation</a>
+            <a href="#skl" class="hover:text-sky-400 hover:scale-110 duration-300">skills</a>
+        </ul>
+        <div>
+          <button
+            class="sm:flex hidden rounded-full  pb-1 pt-0.5 text-sm px-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-110 duration-300 lg:text-lg">contact</button>
+        </div>
+        <div class="sm:hidden block buttonToggle">
+          <button class="flex">
+            <svg class="hover:fill-sky-400 " xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+              class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <div class="sm:hidden z-50 bg-[#0d1027] pl-3 w-40 h-52 pt-2 fixed top-11 right-11 rounded-lg mobileMenu hidden ">
+        <div class=" text-white flex-col">
+          <ul class="">
+            <a href="#home" class="hover:text-sky-400">home</a><br>
+            <a href="#a" class="hover:text-sky-400">about</a><br>
+            <a href="#ed" class="hover:text-sky-400">education</a>
+            <a href="#org" class="hover:text-sky-400">organitation</a><br>
+            <a href="#skl" class="hover:text-sky-400">skills</a>
+          </ul>
+          <div class="absolute bottom-4 left-[50px]">
+            <button class=" rounded-full outline flex pb-1 px-1 hover:text-sky-400">contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="home" class="lg:py-12 py-10"></div>
+    <div class=" text-center lg:text-start  lg:mt-32 lg:mx-20">
+      <div class="lg:ml-[65px] ">
+        <h1 class="text-slate-400 text-2xl mt-20  -mb-[7px] mx-5 sm:text-3xl md:text-[45px] lg:text-[40px]">Hello! I'm
+          <span class="font-semibold text-sky-400 sm:text-2lg lg:text-[40px]">Andika
+            Dwi P</span>
+        </h1>
+        <h2 class="text-slate-400 text-sm mx-5 sm:text-lg lg:text-3xl lg:mt-1 md:text-2xl md:mt-1">a software enginering
+          students
+          from </h2>
+        <h2 class="font-semibold text-sky-400 mx-5 -mt-[4px] sm:text-2xl md:text-3xl ">SMK N 2 KARANGANYAR
+        </h2>
+      </div>
+      <div class="my-14">
+        <div class=" lg:py-1 lg:mb-10  lg:-mt-40 lg:absolute lg:right-36 lg:top-80 ">
+          <img src="bg.png" alt="" class="mx-auto w-60 md:w-72 lg:w-60">
+          <img
+            class=" mx-auto my-5  -mt-[230px] md:-mt-[245px] lg:-mt-[230px] rounded-full w-52 md:scale-110 lg:scale-100 text-sky-400"
+            src="2-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="pt-10 mt-72 lg:absolute lg:top-12 left-36 md:absolute md:top-[400px]">
+      <div class="flex gap-5 ">
+        <a href="https://www.instagram.com/wewedwum">
+          <svg class="fill-white hover:fill-sky-400 hover:scale-110 duration-300 w-7 h-7 ml-10"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+        <a href="https://boxd.it/8I72T">
+          <img class="w-8 hover:scale-110 duration-300 pb-1" src="letterboxd-decal-dots-pos-rgb.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="pt-[41px] lg:pt-[82px] sm:mt-60 " id="a"></div>
+    <div class="py-1 bg-[#0c41ab36] rounded-t-3xl" data-aos="fade-up" data-aos-duration="900">
+      <!--------- about ------------------------------- about ------------------------------->
+      <h1 class="text-center font-semibold text-3xl text-sky-400 pt-4">About me</h1>
+      <div class="flex flex-wrap justify-center mx-5 my-5 pt-5">
+        <div class=" max-w-[500px] px-3 mb-9 mt-5 text-center" data-aos="fade-up" data-aos-duration="900">
+          <p class="text-slate-300 text-lg">Halo! Perkenalkan nama saya <span class="text-sky-400">Andika Dwi
+              Prasetyo</span>, lahir pada 23 Juni 2008 di
+            Kabupaten Karanganyar, Jawa Tengah. Saya adalah seorang pelajar dari SMK N 2 KARANGANYAR pada jurusan
+            Rekayasa Perangkat Lunak.</p>
+        </div>
+      </div>
+
+      <!-- about end -->
+
+      <!--education-->
+      <div class="pt-10 lg:pt-20 " id="ed"></div>
+      <div class=" px-3 mb-9 mx-auto rounded-3xl" data-aos="fade-up" data-aos-duration="900">
+        <h2 class="text-center font-semibold text-3xl text-sky-400 pt-4 mb-12">Education</h2>
+        <div class="sm:flex sm:justify-between sm:gap-9 flex-wrap" data-aos="fade-up" data-aos-duration="900">
+          <div class="mx-auto max-w-[300px] mb-9 outline outline-sky-400 rounded-xl p-3">
+            <h2 class="text-lg font-semibold text-sky-400">Sekolah Dasar</h2>
+            <p class="text-slate-300   text-sm">Saya masuk jenjang sekolah dasar pada tahun 2015 dan lulus pada tahun
+              2021.
+              Saya menjalani jenjang sekolah dasar di SDN 02 MALANGGATEN.
+            </p>
+          </div>
+          <div class="mx-auto max-w-[300px] mb-9 outline outline-sky-400 rounded-xl p-3" id="ed">
+            <h2 class="text-lg font-semibold text-sky-400 rounded-3xl"> Sekolah Menengah Pertama</h2>
+            <p class="text-slate-300   text-sm">Saya masuk jenjang Sekolah Menengah Pertama pada tahun 2021 dan lulus
+              pada
+              tahun 2024.
+              Saya menjalani jenjang Sekolah Menengah Pertama di SMP N 2 Kebakkramat.
+            </p>
+          </div>
+          <div class="mx-auto max-w-[300px] mb-9 outline outline-sky-400 rounded-xl p-3">
+            <h2 class="text-lg font-semibold text-sky-400">Sekolah Menengah Kejuruan</h2>
+            <p class="text-slate-300   text-sm">Saat ini saya sedang berada pada jenjang Sekolah Menengah Kejuruan. Saya
+              masuk jenjang Sekolah Menengah Kejuruan pada tahun 2024 di SMK N 2 KARANGANYAR pada Kejuruan Rekayasa
+              Perangkat Lunak kelas X.
+            </p>
+          </div>
+        </div>
+        <!-- education end -->
+
+        <!-- organisasi -->
+        <h2 class="text-center font-semibold text-3xl text-sky-400 pt-16 lg:pt-[94px]  mb-12" id="org"
+          data-aos="fade-up" data-aos-duration="900">Organitation</h2>
+        <div class="text-white mb-16 bg-sky-700 rounded-xl p-3 max-w-[380px] flex mx-auto shadow-lg" data-aos="fade-up"
+          data-aos-duration="900">
+          <img class="w-14 h-14 my-auto mx-2" src="4.png" alt="">
+          <p class=" ">Saya adalah anggota aktif dari organisasi Journalistic SMK N 2 Karanganyar pada divisi
+            Photographer<br><a class="underline text-sky-300"
+              href="https://www.instagram.com/journalistic_smkn2kra/p/C8d3C3qBRgq/?img_index=1">@journalistic_smkn2kra</a>
+          </p>
+        </div>
+        <!-- organisasi end -->
+
+        <!-- skill -->
+        <div class="pt-[52px] lg:pt-[92px]" id="skl"></div>
+        <div class="bg-slate-900 -m-[12px] pb-60 pt-[10px] lg:pt-[13px] rounded-t-3xl" data-aos="fade-up"
+          data-aos-duration="900">
+          <h1 class="text-center font-semibold text-3xl text-sky-400 pt-4">Skills</h1>
+          <div class="   ">
+            <div class=" my-5 pt-5">
+              <div class="relative px-3 mb-9 mt-5 flex justify-center flex-col" data-aos="fade-up"
+                data-aos-duration="900">
+                <div class="absolute top-0 left-[37px] text-[43px] md:left-[98px] sm:left-[66px] lg:left-[175px]">
+                  <h1 class="text-xl font-semibold text-sky-400">Soft Skills</h1>
+                  <li class="text-sky-400 lg:mb-5"></li>
+                  <li class="text-sky-400 lg:mb-4"></li>
+                  <li class="text-sky-400"></li>
+                </div>
+                <div class="mx-12 sm:mx-20 flex flex-col  justify-stretch mt-9 md:mx-32 lg:mx-48">
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1 mb-[18px]">
+                    Lorem
+                    ipsum dolor,
+                    sit amet consectetur adipisicing elit.</p>
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1 mb-[18px]">
+                    Lorem
+                    ipsum dolor,
+                    sit amet consectetur adipisicing elit.</p>
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1">
+                    Lorem ipsum dolor,
+                    sit amet
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div
+                  class="border-l-2 border-sky-400 h-16 lg:h-20 absolute top-[66px] left-[42px] md:left-[103px] sm:left-[71px] lg:left-[181px]">
+                </div>
+                <div
+                  class="border-l-2 border-sky-400 h-16 lg:h-20 absolute top-[126px] left-[42px]  md:left-[103px] sm:left-[71px] lg:left-[181px] lg:top-36">
+                </div>
+
+                <div
+                  class="absolute left-[37px] top-96 lg:top-[430px] text-[43px] md:left-[98px] sm:left-[66px] lg:left-[175px]">
+                  <h1 class="text-xl font-semibold text-sky-400">Hard Skills</h1>
+                  <li class="text-sky-400 lg:mb-5"><span class="text-xl text-slate-200"></li>
+                  <li class="text-sky-400 lg:mb-4"></li>
+                  <li class="text-sky-400"></li>
+                </div>
+                <div class="mx-12 sm:mx-20 flex flex-col justify-stretch mt-[203px] md:mx-32 lg:mx-48">
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1 mb-[18px]">
+                    Saya dapat berbahasa inggris walsupun belum mahir.</p>
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1 mb-[18px]">
+                    Saya dapat mengoprasikan kamera.</p>
+                  <p
+                    class="min-h-12 flex items-center lg:text-lg pl-2 lg:min-h-16 text-slate-200 text-sm outline outline-sky-400 rounded-sm p-1">
+                    Lorem ipsum dolor,
+                    sit amet
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div
+                  class="border-l-2 border-sky-400 h-16 lg:h-20 absolute top-[450px] left-[42px] md:left-[103px] sm:left-[71px] lg:left-[181px] lg:top-[490px] ">
+                </div>
+                <div
+                  class="border-l-2 border-sky-400 h-16 lg:h-20 absolute top-[510px] left-[42px] md:left-[103px] sm:left-[71px] lg:left-[181px] lg:top-[579px]">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- skill end -->
+
+          <!-- kontak -->
+          <h2 class="text-center font-semibold text-3xl text-sky-400 pt-16 lg:pt-[94px]  mb-12" id="org"
+            data-aos="fade-up" data-aos-duration="900">Contact</h2>
+          <div class="font-sans bg-slate-800 rounded-xl  mx-12 shadow-lg sm:mx-24 md:mx-44 lg:mx-80" data-aos="fade-up"
+            data-aos-duration="900">
+            <div class="text-white py-6 mb-16 p-3 flex gap-7 mx-auto justify-center flex-col md:gap-10">
+              <div class="flex pl-2">
+                <svg class="w-7 h-7 fill-sky-500 hover:scale-110 hover:fill-sky-400 duration-300"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg>
+                <p class="my-auto ml-2 font-serif">dikadwipras8@gmail.com</p>
+              </div>
+              <div class="flex pl-2">
+                <svg class="w-7 h-7 fill-sky-500 hover:scale-110 hover:fill-sky-400 duration-300"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <p class="my-auto ml-2">083168715943</p>
+              </div>
+              <div class="flex pl-2">
+                <svg class="w-7 h-7 fill-sky-500 hover:scale-110 hover:fill-sky-400 duration-300"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                </svg>
+                <p class="my-auto ml-2">+62 812-2802-5928</p>
+              </div>
+            </div>
+          </div>
+          <!-- kontak end -->
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="bg-[#0e0e1a] -mb-3 pb-10 -mt-10">
+        <div class="">
+          <div class="">
+            <div class="flex flex-col gap-2 pt-10">
+              <div class="flex flex-row">
+                <svg class="fill-white w-6 ml-1 hover:scale-110 duration-300" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+                  <path
+                    d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3m0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4m2.646 1A4 4 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3z" />
+                  <path
+                    d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0" />
+                </svg>
+                <p class="text-sm text-gray-400">dikadwipras8@gmail.com</p>
+              </div>
+              <a class="flex flex-row" href="https://www.instagram.com/wewedwum">
+                <svg class="fill-white hover:scale-110 duration-300 w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+                <p class="text-sm pl-1 text-gray-400">instagram</p>
+              </a>
+              <a class="flex flex-row" href="https://boxd.it/8I72T">
+                <img class="w-[18px] ml-2 hover:scale-110 duration-300 pb-1" src="letterboxd-decal-dots-pos-rgb.svg"
+                  alt="">
+                <p class="text-sm pl-1 text-gray-400">Letterboxd</p>
+              </a>
+              <div class="flex flex-row">
+                <img class="w-[18px] ml-2 hover:scale-110 duration-300 pb-1" src="coc.png" alt="">
+                <p class="text-sm font-sans pl-1 text-gray-400">join my clan: #2G8J0J9JV</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <script>
+      const buttonToggle = document.querySelector('.buttonToggle');
+      const mobileMenu = document.querySelector('.mobileMenu')
+
+      buttonToggle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden')
+      })
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
